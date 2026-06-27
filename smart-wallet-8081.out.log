@@ -1,0 +1,576 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< smart-wallet:smart-wallet-application >----------------
+[INFO] Building Smart Wallet Application 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.0:run (default-cli) > test-compile @ smart-wallet-application >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smart-wallet-application ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 36 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ smart-wallet-application ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ smart-wallet-application ---
+[INFO] skip non existing resourceDirectory C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ smart-wallet-application ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.0:run (default-cli) < test-compile @ smart-wallet-application <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.0:run (default-cli) @ smart-wallet-application ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-10T23:52:52.342+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-10T23:52:52.348+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-10T23:52:52.457+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-10T23:52:52.457+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-10T23:52:54.712+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10T23:52:54.821+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 4 JPA repository interfaces.
+2026-05-10T23:52:55.924+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-10T23:52:55.941+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-10T23:52:55.943+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-10T23:52:56.164+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-10T23:52:56.166+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3706 ms
+2026-05-10T23:52:57.550+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10T23:52:57.719+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-05-10T23:52:57.772+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-10T23:52:58.229+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10T23:52:58.283+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-10T23:52:58.814+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d710faa
+2026-05-10T23:52:58.817+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-10T23:52:58.898+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10T23:52:58.900+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-10T23:52:58.930+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10T23:53:00.551+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10T23:53:00.667+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10T23:53:01.344+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10T23:53:01.406+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-10T23:53:02.368+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-05-10T23:53:02.389+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-10T23:53:02.504+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-10T23:53:02.524+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 10.808 seconds (process running for 11.576)
+2026-05-10T23:53:12.490+03:00  INFO 14564 --- [Smart Wallet Application] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10T23:53:12.497+03:00  INFO 14564 --- [Smart Wallet Application] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-10T23:53:12.511+03:00  INFO 14564 --- [Smart Wallet Application] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2026-05-10T23:58:23.723+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2026-05-10T23:58:23.731+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10T23:58:24.029+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-10T23:58:24.036+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10T23:58:24.042+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-10T23:58:24.057+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-10T23:58:24.191+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-10T23:58:24.192+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-10T23:58:24.889+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10T23:58:24.933+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2026-05-10T23:58:25.253+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-10T23:58:25.254+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-10T23:58:25.255+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-10T23:58:25.295+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-10T23:58:25.296+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2026-05-10T23:58:25.559+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10T23:58:25.565+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-10T23:58:25.589+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10T23:58:25.591+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-10T23:58:25.614+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1518f008
+2026-05-10T23:58:25.615+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-10T23:58:25.616+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10T23:58:25.616+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-10T23:58:25.616+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10T23:58:25.852+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10T23:58:25.918+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10T23:58:26.277+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10T23:58:26.332+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-10T23:58:27.083+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-10T23:58:27.097+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-10T23:58:27.152+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-10T23:58:27.173+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.036 seconds (process running for 336.225)
+2026-05-10T23:58:27.198+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-10T23:58:28.565+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-10T23:58:28.570+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10T23:58:28.854+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-10T23:58:28.860+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10T23:58:28.861+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-10T23:58:28.872+03:00  INFO 14564 --- [Smart Wallet Application] [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-10T23:58:29.022+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-10T23:58:29.022+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-10T23:58:29.792+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10T23:58:29.837+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2026-05-10T23:58:30.205+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-10T23:58:30.207+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-10T23:58:30.208+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-10T23:58:30.274+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-10T23:58:30.277+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1252 ms
+2026-05-10T23:58:30.618+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10T23:58:30.625+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-10T23:58:30.649+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10T23:58:30.651+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-10T23:58:30.676+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c8089ad
+2026-05-10T23:58:30.677+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-10T23:58:30.679+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10T23:58:30.679+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-10T23:58:30.680+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10T23:58:31.030+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10T23:58:31.088+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10T23:58:31.573+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10T23:58:31.633+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-10T23:58:32.514+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-10T23:58:32.530+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-10T23:58:32.606+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-10T23:58:32.627+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.653 seconds (process running for 341.679)
+2026-05-10T23:58:32.646+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:08:37.999+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2026-05-11T00:08:38.002+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:08:38.327+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:08:38.331+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:08:38.333+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-05-11T00:08:38.343+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:08:38.569+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:08:38.570+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:08:39.351+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:08:39.400+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:08:39.739+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:08:39.741+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:08:39.742+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:08:39.783+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:08:39.784+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+2026-05-11T00:08:40.069+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:08:40.077+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:08:40.101+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:08:40.103+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-11T00:08:40.130+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@484423a
+2026-05-11T00:08:40.131+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-11T00:08:40.132+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:08:40.132+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:08:40.133+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:08:40.405+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:08:40.462+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:08:41.045+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:08:41.149+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:08:42.282+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:08:42.299+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:08:42.359+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:08:42.381+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.934 seconds (process running for 951.433)
+2026-05-11T00:08:42.401+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:08:46.140+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-11T00:08:46.155+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:08:49.683+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:08:49.687+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:08:49.688+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-05-11T00:08:49.698+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:08:49.826+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:08:49.827+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:08:50.449+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:08:50.496+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:08:50.760+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:08:50.762+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:08:50.763+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:08:50.797+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:08:50.797+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2026-05-11T00:08:51.072+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:08:51.080+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:08:51.097+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:08:51.099+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-05-11T00:08:51.120+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c8df1a
+2026-05-11T00:08:51.121+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-05-11T00:08:51.122+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:08:51.122+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:08:51.123+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:08:51.276+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:08:51.319+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:08:51.694+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:08:51.743+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:08:52.406+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:08:52.416+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:08:52.462+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:08:52.480+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 2.698 seconds (process running for 961.532)
+2026-05-11T00:08:52.499+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:14:27.197+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2026-05-11T00:14:27.200+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:14:27.505+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:14:27.508+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:14:27.510+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-05-11T00:14:27.517+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:14:27.649+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:14:27.649+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:14:28.346+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:14:28.393+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:14:28.728+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:14:28.730+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:14:28.731+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:14:28.767+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:14:28.768+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
+2026-05-11T00:14:29.028+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:14:29.035+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:14:29.055+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:14:29.057+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-05-11T00:14:29.077+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f36ec3d
+2026-05-11T00:14:29.078+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-05-11T00:14:29.079+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:14:29.079+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:14:29.080+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:14:29.238+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:14:29.281+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:14:29.677+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:14:29.730+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:14:30.493+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:14:30.510+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:14:30.575+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:14:30.597+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.0 seconds (process running for 1299.648)
+2026-05-11T00:14:30.617+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:14:31.990+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-11T00:14:31.992+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:14:32.273+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:14:32.276+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:14:32.277+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-05-11T00:14:32.283+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:14:32.416+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:14:32.416+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:14:33.084+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:14:33.157+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:14:33.501+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:14:33.503+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:14:33.504+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:14:33.540+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:14:33.541+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
+2026-05-11T00:14:33.879+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:14:33.886+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:14:33.905+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:14:33.907+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-05-11T00:14:33.928+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69b60089
+2026-05-11T00:14:33.929+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-05-11T00:14:33.930+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:14:33.930+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:14:33.931+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:14:34.185+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:14:34.231+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:14:34.728+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:14:34.787+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:14:35.608+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:14:35.623+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:14:35.693+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:14:35.720+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.347 seconds (process running for 1304.771)
+2026-05-11T00:14:35.738+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:16:09.480+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-05-11T00:16:09.482+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:16:09.796+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:16:09.799+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:16:09.800+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-05-11T00:16:09.808+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:16:09.955+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:16:09.955+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:16:10.643+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:16:10.687+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:16:10.993+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:16:10.994+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:16:10.995+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:16:11.035+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:16:11.036+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2026-05-11T00:16:11.316+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:16:11.322+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:16:11.341+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:16:11.343+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-05-11T00:16:11.366+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a6ae2c9
+2026-05-11T00:16:11.367+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-05-11T00:16:11.367+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:16:11.368+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:16:11.368+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:16:11.513+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:16:11.560+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:16:11.941+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:16:11.996+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:16:12.739+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:16:12.754+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:16:12.805+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:16:12.825+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 2.923 seconds (process running for 1401.876)
+2026-05-11T00:16:12.844+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:16:14.301+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-11T00:16:14.304+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:16:14.592+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:16:14.596+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:16:14.597+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-05-11T00:16:14.604+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:16:14.735+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:16:14.736+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:16:15.539+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:16:15.584+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:16:16.031+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:16:16.034+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:16:16.035+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:16:16.091+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:16:16.092+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1353 ms
+2026-05-11T00:16:16.464+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:16:16.470+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:16:16.487+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:16:16.489+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-05-11T00:16:16.512+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@713ff16e
+2026-05-11T00:16:16.512+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-05-11T00:16:16.513+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:16:16.514+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:16:16.514+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:16:16.750+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:16:16.794+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:16:18.501+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:16:18.566+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:16:19.717+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:16:19.732+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:16:19.798+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:16:19.817+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 5.124 seconds (process running for 1408.869)
+2026-05-11T00:16:19.836+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:28:00.244+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-05-11T00:28:00.246+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:28:00.575+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:28:00.580+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:28:00.582+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-05-11T00:28:00.599+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:28:00.749+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:28:00.750+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:28:01.583+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:28:01.630+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:28:02.001+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:28:02.003+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:28:02.003+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:28:02.043+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:28:02.044+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1290 ms
+2026-05-11T00:28:02.388+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:28:02.396+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:28:02.420+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:28:02.423+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-05-11T00:28:02.451+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@675d1a1
+2026-05-11T00:28:02.451+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-05-11T00:28:02.452+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:28:02.453+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:28:02.454+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:28:02.710+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:28:02.802+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:28:03.420+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:28:03.486+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:28:04.479+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:28:04.495+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:28:04.565+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:28:04.589+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.898 seconds (process running for 2113.64)
+2026-05-11T00:28:04.609+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-11T00:28:08.229+03:00  INFO 14564 --- [Smart Wallet Application] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-11T00:28:08.231+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-11T00:28:08.485+03:00  INFO 14564 --- [Smart Wallet Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-11T00:28:08.488+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:28:08.490+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-05-11T00:28:08.498+03:00  INFO 14564 --- [Smart Wallet Application] [      Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-05-11T00:28:08.653+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Starting Application using Java 17.0.12 with PID 14564 (C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application\target\classes started by Admin in C:\Users\Admin\Documents\Java Web_05.2026\Материали курс 09.2025\Lekciq_4_Exercise_Spring Core\smart-wallet-application)
+2026-05-11T00:28:08.654+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : The following 1 profile is active: "dev"
+2026-05-11T00:28:09.481+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11T00:28:09.534+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2026-05-11T00:28:09.851+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-11T00:28:09.853+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-11T00:28:09.853+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-05-11T00:28:09.890+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-11T00:28:09.891+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2026-05-11T00:28:10.159+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11T00:28:10.165+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-11T00:28:10.184+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11T00:28:10.186+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-05-11T00:28:10.206+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c372de
+2026-05-11T00:28:10.207+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-05-11T00:28:10.208+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-11T00:28:10.208+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-11T00:28:10.208+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11T00:28:10.465+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11T00:28:10.520+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11T00:28:10.972+03:00  WARN 14564 --- [Smart Wallet Application] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-11T00:28:11.024+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-05-11T00:28:11.992+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-11T00:28:12.009+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-11T00:28:12.062+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-11T00:28:12.080+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] app.Application                          : Started Application in 3.484 seconds (process running for 2121.132)
+2026-05-11T00:28:12.096+03:00  INFO 14564 --- [Smart Wallet Application] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
