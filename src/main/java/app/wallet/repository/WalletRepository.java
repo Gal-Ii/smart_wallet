@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.Currency;
+import java.util.List;
 import java.util.UUID;
 
 @Repository
@@ -14,4 +15,6 @@ public interface WalletRepository extends JpaRepository<Wallet, UUID> {
 
     @Query("SELECT COALESCE(SUM(w.balance), 0) FROM Wallet w")
     BigDecimal getTotalWalletAmount();
+
+    List<Wallet> findByOwnerUsername(String recipientUsername);
 }

@@ -50,9 +50,10 @@ public class Transaction {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
+    @Column
     private String failureReason;
 
     @Column(nullable = false)
     private LocalDateTime createdOn;
+
 }

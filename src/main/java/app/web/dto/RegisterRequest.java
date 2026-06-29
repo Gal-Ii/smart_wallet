@@ -9,7 +9,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-// анотацията @Builder ми помага да си направя един обект от този клас
 @Data
 @Builder
 @AllArgsConstructor

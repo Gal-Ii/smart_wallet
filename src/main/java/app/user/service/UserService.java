@@ -4,11 +4,14 @@ import app.subscription.model.Subscription;
 import app.subscription.service.SubscriptionService;
 import app.user.model.User;
 import app.user.model.UserRoles;
+import app.user.property.UserProperties;
 import app.user.repository.UserRepository;
 import app.wallet.service.WalletService;
+import app.web.dto.EditProfileRequest;
 import app.web.dto.LoginRequest;
 import app.web.dto.RegisterRequest;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -27,22 +30,24 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
     private final WalletService walletService;
     private final SubscriptionService subscriptionService;
+    private final UserProperties userProperties;
 
     @Autowired
-    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, WalletService walletService, SubscriptionService subscriptionService) {
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, WalletService walletService, SubscriptionService subscriptionService, UserProperties userProperties) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.walletService = walletService;
         this.subscriptionService = subscriptionService;
+        this.userProperties = userProperties;
     }
 
     public User login(LoginRequest loginRequest){
-        Optional<User> optionalUser = userRepository.findByUsername(loginRequest.username());
+        Optional<User> optionalUser = userRepository.findByUsername(loginRequest.getUsername());
         if(optionalUser.isPresent()){
             throw new RuntimeException("Incorrect username or password.");
         }
 
-        String rawPassword = loginRequest.password();
+        String rawPassword = loginRequest.getPassword();
         String hashedPassword = optionalUser.get().getPassword();
         if(!passwordEncoder.matches(rawPassword, hashedPassword)){
             throw new RuntimeException("Incorrect username or password.");
@@ -89,5 +94,20 @@ public class UserService {
     public User getById(UUID id) {
         return userRepository.findById(id).orElseThrow(() ->
                 new RuntimeException("User with [%s] id does not exists.".formatted(id)));
+    }
+
+    public User getDefaultUser() {
+        return getByUsername(userProperties.getDefaultUser().getUsername());
+    }
+
+    public void updateProfile(UUID id, EditProfileRequest editProfileRequest) {
+        User user = getById(id);
+
+        user.setFirstName(editProfileRequest.getFirstName());
+        user.setLastName(editProfileRequest.getLastName());
+        user.setEmail(editProfileRequest.getEmail());
+        user.setProfilePicture(editProfileRequest.getProfilePictureURL());
+
+        userRepository.save(user);
     }
 }
