@@ -2,6 +2,7 @@ package app.user.repository;
 
 import app.user.model.User;
 import app.user.model.UserRoles;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -34,4 +35,5 @@ public interface UserRepository extends JpaRepository<User, UUID> {
     long countUsersByWalletCount(@Param("walletCount")int walletCount);
 
 
+    boolean existsByEmailAndIdNot(String email, UUID id);
 }

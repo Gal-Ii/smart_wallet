@@ -1,29 +1,31 @@
 package app.web;
 
-import app.user.model.Country;
 import app.user.model.User;
-import app.user.property.UserProperties;
 import app.user.service.UserService;
 import app.web.dto.LoginRequest;
 import app.web.dto.RegisterRequest;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.UUID;
 
 @Controller
 public class IndexController {
 
     private final UserService userService;
-    private final UserProperties userProperties;
+
 
     @Autowired
-    public IndexController(UserService userService, UserProperties userProperties) {
+    public IndexController(UserService userService) {
         this.userService = userService;
-        this.userProperties = userProperties;
+
     }
 
     @GetMapping("/")
@@ -33,21 +35,25 @@ public class IndexController {
     }
 
     @GetMapping("/login")
-    public ModelAndView getLoginPage(){
+    public ModelAndView getLoginPage(@RequestParam(name = "loginAttemptMessage", required = false)String message){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
         modelAndView.addObject("loginRequest", new LoginRequest());
+        modelAndView.addObject("loginAttemptMessage", message);
 
         return modelAndView;
     }
 
+    // Autowire HttpSession = automatically create user session, generate session id and return
+    // Set-Cookie header with the session id.
     @PostMapping("/login")
-    public ModelAndView login(@Valid LoginRequest loginRequest, BindingResult bindingResult){
+    public ModelAndView login(@Valid LoginRequest loginRequest, BindingResult bindingResult, HttpSession session){
 
         if(bindingResult.hasErrors()){
             return new ModelAndView("login");
         }
-        userService.login(loginRequest);
+        User user = userService.login(loginRequest);
+        session.setAttribute("userId", user.getId());
 
         return new ModelAndView("redirect:/home");
     }
@@ -84,15 +90,25 @@ public class IndexController {
     }
 
     @GetMapping("/home")
-    public ModelAndView getHomePage(){
+    public ModelAndView getHomePage(HttpSession session){
 
-        User user = userService.getByUsername(userProperties.getDefaultUser().getUsername());
+        UUID userId = (UUID) session.getAttribute("userId");
+
+        User user = userService.getById(userId);
 
         ModelAndView modelAndView = new ModelAndView();
+
         modelAndView.setViewName("home");
         modelAndView.addObject("user", user);
 
         return modelAndView;
+    }
+
+    @GetMapping
+    public String logout(HttpSession session){
+        session.invalidate();
+
+        return "redirect:/";
     }
 }
 

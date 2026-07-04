@@ -60,3 +60,15 @@
   box-shadow: none;
   border: transparent;
 }
+
+.status.active{
+  color: #3f9f43;
+}
+
+.status.completed{
+  color: #ff1a1a;
+}
+
+.status.terminated{
+  color: blue;
+}

@@ -1,5 +1,6 @@
 package app.user.service;
 
+import app.exceptions.EmailAlreadyExistException;
 import app.subscription.model.Subscription;
 import app.subscription.service.SubscriptionService;
 import app.user.model.User;
@@ -43,7 +44,7 @@ public class UserService {
 
     public User login(LoginRequest loginRequest){
         Optional<User> optionalUser = userRepository.findByUsername(loginRequest.getUsername());
-        if(optionalUser.isPresent()){
+        if(!optionalUser.isPresent()){
             throw new RuntimeException("Incorrect username or password.");
         }
 
@@ -60,7 +61,7 @@ public class UserService {
     public void register(RegisterRequest registerRequest){
          Optional<User> optionalUser = userRepository.findByUsername(registerRequest.getUsername());
          if(optionalUser.isPresent()){
-             throw new RuntimeException("User with [%s] username already exists.".formatted(registerRequest.getUsername()));
+             throw new RuntimeException(String.format("User with [%s] username already exists.", registerRequest.getUsername()));
          }
 
          User user = User.builder()
@@ -79,7 +80,7 @@ public class UserService {
 
          subscriptionService.createDefaultSubscription(user);
 
-         log.info("New user profile was registered in the system for user [%s].".formatted(registerRequest.getUsername()));
+         log.info(String.format("New user profile was registered in the system for user [%s].", registerRequest.getUsername()));
     }
 
     public List<User> getAll() {
@@ -88,12 +89,12 @@ public class UserService {
 
     public User getByUsername(String username) {
         return userRepository.findByUsername(username)
-                .orElseThrow(() -> new RuntimeException("User with [%s] username does not exists.".formatted(username)));
+                .orElseThrow(() -> new RuntimeException(String.format("User with [%s] username does not exists.", username)));
     }
 
     public User getById(UUID id) {
         return userRepository.findById(id).orElseThrow(() ->
-                new RuntimeException("User with [%s] id does not exists.".formatted(id)));
+                new RuntimeException(String.format("User with [%s] id does not exists.", id)));
     }
 
     public User getDefaultUser() {
@@ -101,6 +102,10 @@ public class UserService {
     }
 
     public void updateProfile(UUID id, EditProfileRequest editProfileRequest) {
+        if(userRepository.existsByEmailAndIdNot(editProfileRequest.getEmail(), id)){
+            throw new EmailAlreadyExistException("Email is already used.");
+        }
+
         User user = getById(id);
 
         user.setFirstName(editProfileRequest.getFirstName());
@@ -110,4 +115,30 @@ public class UserService {
 
         userRepository.save(user);
     }
+
+    public void switchStatus(UUID userId) {
+        User user = getById(userId);
+
+        user.setActive(!user.isActive());
+
+        user.setUpdatedOn(LocalDateTime.now());
+        userRepository.save(user);
+
+    }
+
+
+    public void switchRole(UUID userId) {
+
+        User user = getById(userId);
+
+        if(user.getRole() ==  UserRoles.USER){
+            user.setRole(UserRoles.ADMIN);
+        }else {
+            user.setRole(UserRoles.USER);
+        }
+        user.setUpdatedOn(LocalDateTime.now());
+
+        userRepository.save(user);
+    }
+
 }

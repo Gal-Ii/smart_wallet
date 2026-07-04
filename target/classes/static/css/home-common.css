@@ -65,15 +65,27 @@ div.single-section-box {
   letter-spacing: 0.03em;
   background-color: #e0f7e9;
   color: #2e7d32;
-  border: 1px solid rgba(84, 227, 54, 0.6);
-  box-shadow: 0 4px 8px rgba(0, 153, 51, 0.15);
+  border: 1px solid rgba(84, 227, 54, 10);
+  box-shadow: 0 4px 8px rgba(0, 153, 51, 10);
 }
 
 .profile-status-role-container .inactive-profile {
   background-color: #fbe9e7;
   color: #c62828;  letter-spacing: 0.03em;
   border: 1px solid rgba(255, 103, 103, 0.6);
-  box-shadow: 0 4px 8px rgba(255, 103, 103, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 103, 103, 10);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profile-status-role-container .user-role-paragraph {
+  background-color: #e7f9fb;
+  color: #2872c6;  letter-spacing: 0.03em;
+  border: 1px solid rgb(40 151 198);
+  box-shadow: 0 4px 8px rgb(40 114 198);
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;

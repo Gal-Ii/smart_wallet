@@ -109,6 +109,7 @@
         <div class="profile-status-role-container">
           <p th:if="${user.isActive()}" class="active-profile" >ACTIVE</p>
           <p th:if="${!user.isActive()}" class="inactive-profile" >INACTIVE</p>
+          <p th:text="${user.role}" class="user-role-paragraph">USER_ROLE</p>
         </div>
         <div class="details-section">
           <div class="details-section-container">
@@ -210,12 +211,13 @@
         </div>
         <div class="details-section-container">
           <strong>Subscribe until: </strong>
-          <p th:text="${#temporals.format(user.subscriptions[0].complatedOn, 'dd MMM YYY HH:mm')}">11 Jan 2025 21:29</p>
+          <p th:text="${#temporals.format(user.subscriptions[0].completedOn, 'dd MMM yyyy HH:mm')}">11 Jan 2025 21:29</p>
         </div>
       </div>
     </div>
   </div>
 </main>
-<div class="footer"><p>© 2025 Smart Wallet. All rights reserved.</p></div>
+<th:block th:if="${user.role.name() == 'ADMIN'}" th:insert="fragments/my-fragment :: my-website-admin-footer"></th:block>
+<th:block th:unless="${user.role.name() == 'ADMIN'}" th:insert="fragments/my-fragment :: my-website-footer"></th:block>
 </body>
 </html>

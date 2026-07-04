@@ -14,6 +14,7 @@ public class WalletController {
 
     @GetMapping
     public String getWallets(){
-       return "wallets";
+
+        return "wallets";
     }
 }

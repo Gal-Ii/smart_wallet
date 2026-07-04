@@ -44,5 +44,5 @@ public class Subscription {
     private LocalDateTime createdOn;
 
     @Column(nullable = false)
-    private LocalDateTime complatedOn;
+    private LocalDateTime completedOn;
 }

@@ -6,6 +6,7 @@ import app.user.model.User;
 import app.user.property.UserProperties;
 import app.user.service.UserService;
 import app.transaction.model.Transaction;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -27,6 +29,20 @@ public class TransactionController {
         this.transactionService = transactionService;
     }
 
+    @GetMapping
+    public ModelAndView getTransactionHistory(HttpSession session){
+
+        UUID userId =  (UUID) session.getAttribute("userId");
+
+        List<Transaction> allUserTransactions = transactionService.getAllByUserId(userId);
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/transactions");
+        modelAndView.addObject("transactions", allUserTransactions);
+
+        return modelAndView;
+    }
+
     @GetMapping("/{id}")
     public ModelAndView getTransaction(@PathVariable UUID id){
         Transaction transaction = transactionService.getById(id);
@@ -37,26 +53,4 @@ public class TransactionController {
 
         return modelAndView;
     }
-
-
-//    private final UserService userService;
-//    private final UserProperties userProperties;
-//
-//    @Autowired
-//    public TransactionController(UserService userService, UserProperties userProperties) {
-//        this.userService = userService;
-//        this.userProperties = userProperties;
-//    }
-//
-//
-//    @GetMapping
-//    public ModelAndView getUserTransactions(){
-//        User user = userService.getByUsername(userProperties.getDefaultUser().getUsername());
-//
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.setViewName("transactions");
-//        modelAndView.addObject("user", user);
-//
-//        return modelAndView;
-//    }
 }

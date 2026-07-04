@@ -27,4 +27,6 @@ public interface TransactionRepository extends JpaRepository<Transaction, UUID> 
 
     long countByStatus(TransactionStatus status);
 
+
+    List<Transaction> findAllByOwnerId(UUID userId);
 }
